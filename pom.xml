@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.mycompany</groupId>
-	<artifactId>on-prem-depolyment</artifactId>
+	<artifactId>my-cloudhub-deployment-pipeline</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>mule-application</packaging>
 
@@ -46,12 +46,11 @@
 			         <objectStoreV2>true</objectStoreV2>
 			         <applicationName>my-cloudhub-deployment-pipeline</applicationName>
            			 <region>eu-west-2</region>            
-            			         
 			      </cloudHubDeployment>
 			   </configuration>
 			    <executions>
 			        <execution>
-			            <id>deploy</id>
+			            <id>cloudhub</id>
 			            <phase>deploy</phase>
 			            <goals>
 			                <goal>deploy</goal>
